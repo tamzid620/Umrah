@@ -119,9 +119,9 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <a className="md:p-4 py-2 block uppercase hover:text-[#539ce6]">
+              <Link to="/umrah-packages" className="md:p-4 py-2 block uppercase hover:text-[#539ce6]">
                 Umrah Packages
-              </a>
+              </Link>
             </li>
             <li>
               <a className="md:p-4 py-2 block uppercase hover:text-[#539ce6]">
