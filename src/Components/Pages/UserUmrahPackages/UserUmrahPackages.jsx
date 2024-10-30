@@ -93,7 +93,7 @@ const UserUmrahPackages = () => {
           style={{ fontFamily: "Taviraj, serif" }}
           className="relative z-10 flex py-28 justify-center font-bold text-3xl text-white"
         >
-          Umrah Packages
+         All Umrah Packages
         </h1>
       </div>
       {/* packages parent div  */}

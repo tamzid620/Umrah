@@ -18,14 +18,14 @@ const HomeVIsitOffice = () => {
         <div className="flex justify-center items-center">
           <div>
             <h1
-              style={{ fontFamily: "Montserrat, sans-serif" }}
+             style={{ fontFamily: "Taviraj, serif" }}
               className="font-semibold text-xl"
-            >
+              >
               Visit Our Campus
             </h1>
             <p
-              style={{ fontFamily: "Roboto, sans-serif" }}
-              className="font-light my-5"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+              className="my-5"
             >
               Take the first step in achieving your career goals by visiting the
               AIMS campus. During your school visit you'll get to meet
@@ -34,8 +34,8 @@ const HomeVIsitOffice = () => {
               also get the chance to tour the AIMS campus, including all of our
               classrooms, medical labs, and student facilities.
             </p>
-            <div className=" flex justify-center mt-10 mb-10">
-              <button className=" bg-[#25476a] text-white hover:bg-gray-100 hover:text-black px-4 py-2 rounded font-bold">
+            <div className=" flex md:justify-start sm: justify-center mt-10 mb-10">
+              <button className=" bg-[#25476a] text-white font-semibold rounded-md px-4 py-2 uppercase shadow-md  hover:shadow-lg hover:shadow-gray-500">
                 Schedule a Visit
               </button>
             </div>

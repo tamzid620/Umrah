@@ -1,11 +1,11 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
-import image1 from "../../../assets/images/p7.png";
-import image2 from "../../../assets/images/p8.png";
-import image3 from "../../../assets/images/p9.png";
-import image4 from "../../../assets/images/p10.png";
-import image5 from "../../../assets/images/p11.png";
-import image6 from "../../../assets/images/p12.png";
+import image1 from "../../../../assets/images/p7.png";
+import image2 from "../../../../assets/images/p8.png";
+import image3 from "../../../../assets/images/p9.png";
+import image4 from "../../../../assets/images/p10.png";
+import image5 from "../../../../assets/images/p11.png";
+import image6 from "../../../../assets/images/p12.png";
 import { Link } from "react-router-dom";
 
 const data = [
@@ -108,7 +108,7 @@ const HomeUmrahPackages = () => {
 
           <div className="flex justify-center mt-20">
             <Link to="/umrah-packages">
-              <button className=" bg-[#25476a] text-white font-semibold rounded-md px-8 py-2 uppercase shadow-md  hover:shadow-lg hover:shadow-gray-500">
+              <button className="bg-[#25476a] text-white font-semibold rounded-md px-8 py-2 uppercase shadow-md  hover:shadow-lg hover:shadow-gray-500">
                 View All
               </button>
             </Link>

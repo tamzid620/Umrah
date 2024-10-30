@@ -1,7 +1,7 @@
-import icon1 from "../../../assets/icons/price.png";
-import icon2 from "../../../assets/icons/verified.png";
-import icon3 from "../../../assets/icons/like.png";
-import icon4 from "../../../assets/icons/guidelines.png";
+import icon1 from "../../../../assets/icons/price.png";
+import icon2 from "../../../../assets/icons/verified.png";
+import icon3 from "../../../../assets/icons/like.png";
+import icon4 from "../../../../assets/icons/guidelines.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
