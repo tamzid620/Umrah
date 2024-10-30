@@ -26,8 +26,8 @@ const HomeBanner = () => {
               <h1 
             data-aos="fade-down"
             data-aos-duration="1000" 
-             style={{ fontFamily: 'Montserrat, sans-serif' }} className="font-semibold text-4xl">
-                A leading Student Visa Consultancy Firm In Bangladesh!
+             style={{ fontFamily: 'Montserrat, sans-serif' }} className="font-semibold text-4xl uppercase ">
+                A leading Best Travel Agent in Bangladesh !
               </h1>
               <button 
             data-aos="fade-down"

@@ -1,94 +1,116 @@
-import { FaGraduationCap ,FaBookReader,FaBusinessTime,FaUserCheck ,FaTicketAlt ,FaUserTie} from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import image1 from "../../../../assets/images/p1.jpg";
+import image2 from "../../../../assets/images/p2.jpg";
+import image3 from "../../../../assets/images//p3.jpg";
+import image4 from "../../../../assets/images//p4.jpg";
+import image5 from "../../../../assets/images//p5.jpg";
+import image6 from "../../../../assets/images//p6.jpg";
+
+const data = [
+  {
+    img: image1,
+    title: "Economy Umrah Package",
+    price: "Starts from $900 - $1,500 per person",
+    duration: "7-10 days",
+  },
+  {
+    img: image2,
+    title: "Standard Umrah Package",
+    price: "Starts from $1,500 - $2,500 per person",
+    duration: "10-14 days",
+  },
+  {
+    img: image3,
+    title: " Luxury Umrah Package",
+    price: "Starts from $3,000 - $5,000+ per person",
+    duration: " 10-14 days",
+  },
+  {
+    img: image4,
+    title: "Ramadan Umrah Package ",
+    price: "Starts from $2,500 - $6,000 per person",
+    duration: "10-15 days",
+  },
+  {
+    img: image5,
+    title: "Weekend Umrah Package ",
+    price: "Starts from $500 - $1,000 per person",
+    duration: "3-5 days",
+  },
+  {
+    img: image6,
+    title: "Family Umrah Package",
+    price: "Starts from $3,000 - $7,000 per family",
+    duration: "10-15 days",
+  },
+];
 
 const HomeSupport = () => {
-    Aos.init();
-    return (
-        <div className="flex justify-center bg-[#25486a21]">
-        <div className="my-20">
-                <h1 className="flex justify-center ">WE OFFER SUPPORT</h1>
-                <p className="flex justify-center font-bold text-3xl">How We Can Help You?</p>
-                {/* support parent div  */}
-            <div 
-            data-aos="fade-down"
-            data-aos-duration="2000" 
-             className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-5 lg:mx-20">
-                {/* STUDENT VISA div  ------------------- */}
-            <div className="flex justify-center">
-                <div className="rounded-tl-3xl w-[350px] h-[350px] bg-[#25476a] text-white px-3 leading-7 hover:shadow-lg hover:shadow-gray-500">
-                    <span className="flex justify-center py-3"><FaGraduationCap color="white" size={60}/></span>
-                    <h1 style={{ fontFamily: 'Montserrat, sans-serif' }} className="flex justify-center font-bold text-xl">STUDENT VISA</h1>
-                    <p style={{ fontFamily: 'Roboto, sans-serif' }} className="font-light my-5">With us you will get expert guidelines regarding all your Study abroad needs. We have been fulfilling the study abroad dreams of students in 30 countries for over 10 years.</p>
-                    <div className=" flex justify-center mt-10 mb-10">
-                        <button className="bg-gray-300 text-black px-3 py-2 rounded-md font-semibold text-xs">Know More</button>
-                        </div>
-                </div>
+  Aos.init();
+  return (
+    <div className="flex justify-center bg-[#25486a14] ">
+      <div className="my-20 lg:max-w-5xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-5 sm: mx-4">
+        <p
+          style={{ fontFamily: "Montserrat, serif" }}
+          className="mb-3 text-center text-gray-800 font-semibold"
+        >
+          What we Offer
+        </p>
+        <h1
+          style={{ fontFamily: "Taviraj, serif" }}
+          className="flex justify-center font-bold text-3xl"
+        >
+          Umrah Packages
+        </h1>
+        {/* support parent div  */}
+        <div
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-5 "
+        >
+          {/* ------------------------------------- */}
+          {data.map(({ img, title, price, duration }, index) => (
+            <div
+              style={{ fontFamily: "Montserrat, serif" }}
+              key={index}
+              className="relative bg-[#25476a] text-white  hover:shadow-lg hover:shadow-gray-500
+             text-center leading-7 rounded-md h-[400px]"
+            >
+              <img
+                className=" w-full h-[200px] rounded-t-md"
+                src={img}
+                alt=""
+              />
+              <div className="relative px-3 pt-4 mb-14">
+                <h1
+                  style={{ fontFamily: "Taviraj, serif" }}
+                  className="text-xl font-semibold"
+                >
+                  {title}
+                </h1>
+                <p className=" text-sm ">{price}</p>
+                <p className="mt-2 flex justify-center ">
+                  <span className="mt-3 bg-[#21a1eb] px-3 rounded-md w-[120px] text-sm">
+                    {duration}
+                  </span>
+                </p>
+              </div>
+              <button className="absolute bottom-3 left-28 bg-gray-300 text-black font-semibold rounded-md px-3 py-1 hover:bg-[#21a1eb] hover:text-white">
+                Know More
+              </button>
             </div>
-                {/* English Learning Platform div  ------------------- */}
-            <div className="flex justify-center items-center">
-                <div className=" w-[350px] h-[350px] bg-[#25476a] text-white px-3 leading-7 hover:shadow-lg hover:shadow-gray-500">
-                    <span className="flex justify-center py-3"><FaBookReader color="white" size={60}/></span>
-                    <h1 style={{ fontFamily: 'Montserrat, sans-serif' }} className="flex justify-center font-bold text-xl">English Learning Platform</h1>
-                    <p style={{ fontFamily: 'Roboto, sans-serif' }} className="font-light my-5">With us you will get expert guidelines regarding all your Study abroad needs. We have been fulfilling the study abroad dreams of students in 30 countries for over 10 years.</p>
-                    <div className=" flex justify-center mt-10 mb-10">
-                        <button className="bg-gray-300 text-black px-3 py-2 rounded-md font-semibold text-xs">Know More</button>
-                        </div>
-                </div>
-            </div>
-
-                {/* BUSINESS INVESTOR VISA div  ------------------- */}
-            <div className="flex justify-center items-center">
-                <div className="rounded-tr-3xl w-[350px] h-[350px] bg-[#25476a] text-white px-3 leading-7 hover:shadow-lg hover:shadow-gray-500">
-                    <span className="flex justify-center py-3"><FaBusinessTime color="white" size={60}/></span>
-                    <h1 style={{ fontFamily: 'Montserrat, sans-serif' }} className="flex justify-center font-bold text-xl">BUSINESS INVESTOR VISA</h1>
-                    <p style={{ fontFamily: 'Roboto, sans-serif' }} className="font-light my-5">With us you will get expert guidelines regarding all your Study abroad needs. We have been fulfilling the study abroad dreams of students in 30 countries for over 10 years.</p>
-                    <div className=" flex justify-center mt-10 mb-10">
-                        <button className="bg-gray-300 text-black px-3 py-2 rounded-md font-semibold text-xs">Know More</button>
-                        </div>
-                </div>
-            </div>
-
-                {/* SKILLED MIGRATION div  ------------------- */}
-            <div className="flex justify-center items-center">
-                <div className="rounded-bl-3xl w-[350px] h-[350px] bg-[#25476a] text-white px-3 leading-7 hover:shadow-lg hover:shadow-gray-500">
-                    <span className="flex justify-center py-3"><FaUserCheck color="white" size={60}/></span>
-                    <h1 style={{ fontFamily: 'Montserrat, sans-serif' }} className="flex justify-center font-bold text-xl">SKILLED MIGRATION</h1>
-                    <p style={{ fontFamily: 'Roboto, sans-serif' }} className="font-light my-5">With us you will get expert guidelines regarding all your Study abroad needs. We have been fulfilling the study abroad dreams of students in 30 countries for over 10 years.</p>
-                    <div className=" flex justify-center mt-10 mb-10">
-                        <button className="bg-gray-300 text-black px-3 py-2 rounded-md font-semibold text-xs">Know More</button>
-                        </div>
-                </div>
-            </div>
-
-                {/* E-TICKETING div  ------------------- */}
-            <div className="flex justify-center items-center">
-                <div className=" w-[350px] h-[350px] bg-[#25476a] text-white px-3 leading-7 hover:shadow-lg hover:shadow-gray-500">
-                    <span className="flex justify-center py-3"><FaTicketAlt color="white" size={60}/></span>
-                    <h1 style={{ fontFamily: 'Montserrat, sans-serif' }} className="flex justify-center font-bold text-xl">E-TICKETING</h1>
-                    <p style={{ fontFamily: 'Roboto, sans-serif' }} className="font-light my-5">With us you will get expert guidelines regarding all your Study abroad needs. We have been fulfilling the study abroad dreams of students in 30 countries for over 10 years.</p>
-                    <div className=" flex justify-center mt-10 mb-10">
-                        <button className="bg-gray-300 text-black px-3 py-2 rounded-md font-semibold text-xs">Know More</button>
-                        </div>
-                </div>
-            </div>
-            
-                {/* VISIT VISA div  ------------------- */}
-                <div className="flex justify-center items-center">
-                <div className="rounded-br-3xl w-[350px] h-[350px] bg-[#25476a] text-white px-3 leading-7 hover:shadow-lg hover:shadow-gray-500">
-                    <span className="flex justify-center py-3"><FaUserTie color="white" size={60}/></span>
-                    <h1 style={{ fontFamily: 'Montserrat, sans-serif' }} className="flex justify-center font-bold text-xl">VISIT VISA</h1>
-                    <p style={{ fontFamily: 'Roboto, sans-serif' }} className="font-light my-5">With us you will get expert guidelines regarding all your Study abroad needs. We have been fulfilling the study abroad dreams of students in 30 countries for over 10 years.</p>
-                    <div className=" flex justify-center mt-10 mb-10">
-                        <button className="bg-gray-300 text-black px-3 py-2 rounded-md font-semibold text-xs">Know More</button>
-                        </div>
-                </div>
-            </div>
-
-            </div>
+          ))}
         </div>
+
+        <div className="flex justify-center mt-20">
+          <button className=" bg-[#25476a] text-white font-semibold rounded-md px-8 py-2 uppercase shadow-md shadow-black hover:shadow-lg hover:shadow-black ">
+            View All
+          </button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default HomeSupport;

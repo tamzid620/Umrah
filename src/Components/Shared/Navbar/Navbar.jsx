@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
-// import '../../Pages/Home/Nav.js'
-import homeLogo from "../../../assets/images/home_logo.jpg";
+import homeLogo from "../../../assets/icons/Umrah-Logo-Blue.png";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutUsDropDownOpen, setAboutUsDropDownOpen] = useState(false);
-  const [ourServiceDropDownOpen, setOurServiceDropDownOpen] = useState(false);
   const navRef = useRef(null);
 
   const toggleMenu = () => {
@@ -16,17 +14,10 @@ const Navbar = () => {
 
   const toggleAboutUsDropDown = () => {
     setAboutUsDropDownOpen(!aboutUsDropDownOpen);
-    setOurServiceDropDownOpen(false);
-  };
-
-  const toggleOurServiceDropDown = () => {
-    setOurServiceDropDownOpen(!ourServiceDropDownOpen);
-    setAboutUsDropDownOpen(false);
   };
 
   const handleClickOutside = (e) => {
     if (navRef.current && !navRef.current.contains(e.target)) {
-      setOurServiceDropDownOpen(false);
       setAboutUsDropDownOpen(false);
     }
   };
@@ -43,8 +34,9 @@ const Navbar = () => {
       <nav
         ref={navRef}
         className="
+        font-semibold
           flex flex-wrap
-          items-center
+          items-center 
           justify-between
           w-full
           py-4
@@ -60,7 +52,11 @@ const Navbar = () => {
       >
         <div>
           <Link to="/">
-            <img className="lg:w-[100px] md:w-[70px] sm: w-[50px]" src={homeLogo} alt="" />
+            <img
+              className=" md:p-2 lg:w-[80px] md:w-[70px] sm: w-[60px]"
+              src={homeLogo}
+              alt=""
+            />
           </Link>
         </div>
 
@@ -117,32 +113,14 @@ const Navbar = () => {
                   aboutUsDropDownOpen ? "block" : "hidden"
                 } bg-gray-200 p-3 leading-10 absolute w-[200px] text-center z-50`}
               >
-                <li className="hover:text-[#539ce6]">Our Steps & guidance</li>
-                <li className="hover:text-[#539ce6]">Our Team</li>
-                <li className="hover:text-[#539ce6]">Photo Gallery</li>
-              </ul>
-            </li>
-            <li>
-              <a
-                onClick={toggleOurServiceDropDown}
-                className="md:p-4 py-2 uppercase hover:text-[#539ce6] flex items-center relative"
-              >
-                Our Services <IoIosArrowDown className="ms-2" />
-              </a>
-              {/* OUr Service ul li ------- */}
-              <ul
-                className={`${
-                  ourServiceDropDownOpen ? "block" : "hidden"
-                } bg-gray-200 p-3 leading-10 absolute w-[200px] text-center z-40`}
-              >
-                <li className="hover:text-[#539ce6]">Student Visa </li>
-                <li className="hover:text-[#539ce6]">E-Ticketing</li>
-                <li className="hover:text-[#539ce6]">Visit Visa</li>
+                <li className="hover:bg-[#539ce6] hover:text-white">Our Steps & guidance</li>
+                <li className="hover:bg-[#539ce6] hover:text-white">Our Team</li>
+                <li className="hover:bg-[#539ce6] hover:text-white">Photo Gallery</li>
               </ul>
             </li>
             <li>
               <a className="md:p-4 py-2 block uppercase hover:text-[#539ce6]">
-                Successful Applicants
+                Umrah Packages
               </a>
             </li>
             <li>
@@ -151,30 +129,16 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="md:p-4 py-2 block uppercase hover:text-[#539ce6]">
-                Event
-              </a>
-            </li>
-            <li>
               <a
-                className="lg:flex md:hidden sm: hidden md:p-4 py-2 uppercase 
-                 hover:text-black hover:bg-gray-300 text-white bg-[#25476a] rounded-full"
+                className="lg:flex md:hidden sm: hidden mt-1 px-4 py-3 uppercase 
+                  text-white bg-[#25476a] hover:bg-[#21a1eb] hover:text-white rounded-md"
               >
                 Contact
               </a>
             </li>
             <li>
-              <a
-                className="lg:flex md:hidden sm: hidden md:p-4 py-2 uppercase 
-                 hover:text-black hover:bg-gray-300 text-white bg-[#25476a] rounded-lg"
-                href="/userLogin"
-              >
-                Sign In
-              </a>
-            </li>
-            <li>
-              <a className="lg:hidden md:flex sm: flex md:p-4 py-2  hover:text-[#539ce6] text-purple-500">
-                Sign In
+              <a className="lg:hidden md:block sm: block md:p-4 py-2 uppercase hover:text-[#539ce6]">
+              Contact
               </a>
             </li>
           </ul>

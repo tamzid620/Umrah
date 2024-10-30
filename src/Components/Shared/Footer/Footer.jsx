@@ -1,4 +1,4 @@
-import footerimg from "../../../assets/images/footer_logo.png";
+import footerimg from "../../../assets/icons/Umrah-Logo-White.png";
 import faceBookLogo from "../../../assets/icons/Facebook_Logo.png";
 import LinkdinLogo from "../../../assets/icons/Linkdin_logo.png";
 import YoutubeLogo from "../../../assets/icons/Youtube_logo.png";
@@ -13,7 +13,7 @@ const Footer = () => {
       >
         {/* footer div 1  */}
         <div>
-          <img className="w-[100px]" src={footerimg} alt="" />
+          <img className="w-[80px] mb-3" src={footerimg} alt="" />
           <p className="">
             EDUMIG is a professional International education and immigration
             consultant based in Dhaka & Chittagong, Bangladesh. We are the first
