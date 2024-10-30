@@ -1,16 +1,14 @@
 import HomeBanner from "../../Shared/HomeSection/HomeBanner/HomeBanner";
-import HomeCounter from "../../Shared/HomeSection/HomeCounter/HomeCounter";
-import HomeSlider from "../../Shared/HomeSection/HomeSlider/HomeSlider";
-import HomeSupport from "../../Shared/HomeSection/HomeSupport/HomeSupport";
+import HomeSupport from "../../Shared/HomeSupport/HomeSupport";
 import HomeVIsitOffice from "../../Shared/HomeSection/HomeVIsitOffice/HomeVIsitOffice";
+import HomeUmrahPackages from "../../Shared/HomeUmrahPackages/HomeUmrahPackages";
 
 const Home = () => {
   return (
     <div>
       <HomeBanner />
-      <HomeSlider />
       <HomeSupport />
-      <HomeCounter/>
+      <HomeUmrahPackages />
       <HomeVIsitOffice/>
     </div>
   );

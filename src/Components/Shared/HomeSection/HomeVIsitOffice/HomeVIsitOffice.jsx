@@ -7,8 +7,8 @@ const HomeVIsitOffice = () => {
   Aos.init();
 
   return (
-    <div className="">
-    <div className="my-20 lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-5 sm: mx-4">
+    <div className="bg-white">
+    <div className="py-20 lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-5 sm: mx-4">
       <div
         data-aos="fade-down"
         data-aos-duration="2000"

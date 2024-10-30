@@ -47,7 +47,7 @@ const Navbar = () => {
           shadow-lg
           shadow-gray-800
           fixed
-          z-10
+          z-20
         "
       >
         <div>

@@ -6,6 +6,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import { ThemeProvider } from "@material-tailwind/react";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Pages/Home/Home";
+import UserUmrahPackages from "./Components/Pages/UserUmrahPackages/UserUmrahPackages";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +20,8 @@ const router = createBrowserRouter([
       },
       // user section --------------------
       {
-        path: "/",
-        element: <Home />,
+        path: "/umrah-packages",
+        element: <UserUmrahPackages />,
       },
     ],
   },

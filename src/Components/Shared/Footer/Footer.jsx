@@ -8,12 +8,11 @@ const Footer = () => {
   return (
     <div className="">
       <div
-        style={{ fontFamily: "Roboto, sans-serif" }}
         className="bg-[#25476a] text-white grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-10 mx-auto p-8"
       >
         {/* footer div 1  */}
         <div>
-          <img className="w-[80px] mb-3" src={footerimg} alt="" />
+          <img className="w-[80px] pb-3" src={footerimg} alt="" />
           <p className="">
             EDUMIG is a professional International education and immigration
             consultant based in Dhaka & Chittagong, Bangladesh. We are the first
@@ -46,7 +45,7 @@ const Footer = () => {
         </div>
         {/* footer div 2  */}
         <div>
-          <h1 className="font-bold text-xl mb-5">Useful Links</h1>
+          <h1 className="font-bold text-xl pb-5">Useful Links</h1>
           <p>ABOUT US</p>
           <p>EVENT</p>
           <p>OUR TEAM</p>
@@ -54,7 +53,7 @@ const Footer = () => {
         </div>
         {/* footer div 3  */}
         <div>
-          <h1 className="font-bold text-xl mb-5">Location</h1>
+          <h1 className="font-bold text-xl pb-5">Location</h1>
           <p>
             House# 77, Flat # 9a, Road # 4, Block # C Banani, Dhaka
             loremipsum.edu.com
@@ -62,12 +61,12 @@ const Footer = () => {
         </div>
         {/* footer div 4  */}
         <div>
-          <h1 className="font-bold text-xl mb-5">Hotline</h1>
+          <h1 className="font-bold text-xl pb-5">Hotline</h1>
           <p>+8801569569523</p>
         </div>
       </div>
-      <p className="flex justify-center py-2 uppercase text-xs">© 2024 LoremIpsum. All rights reserved by
-      <span className="ms-1 hover:text-[#539ce6]"><Link to="https://marketien.online/" target="_blank"> Marketien</Link></span></p>
+      <p className="bg-[#25476a] text-white flex justify-center py-2 uppercase text-xs">© 2024 Umrah. All rights reserved by
+      <span className="ms-1 hover:text-[#539ce6]"><Link to="https://marketienltd.com/" target="_blank"> Marketien</Link></span></p>
     </div>
   );
 };

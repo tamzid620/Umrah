@@ -1,6 +1,6 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
-import homeBanner1 from "../../../../assets/Umrah-Banner.jpeg";
+import homeBanner1 from "../../../../assets/images/Umrah-Banner.jpeg";
 
 const HomeBanner = () => {
   Aos.init();
