@@ -1,26 +1,26 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
 const questions = [
     {
-      question: "Does SoftPlatoon cover all stages of the SDLC??",
-      answer: "Yes, depending on the project size, we might be able to get your MVP delivered in 2 weeks – 4 months. Subsequently, we can ensure releases of new functionality every 2–6 weeks. Get in touch, and we'll work out a way to meet your needs.."
+      question: "What’s included in your Umrah packages?",
+      answer: "Our packages usually cover everything you’ll need for a smooth journey—visa processing, flights, hotel stays, airport transfers, and even guided tours. We handle the details so you can focus on your spiritual experience."
     },
     {
-      question: "Can SoftPlatoon speed up the delivery of projects?",
-      answer: "Yes, depending on the project size, we might be able to get your MVP delivered in 2 weeks – 4 months. Subsequently, we can ensure releases of new functionality every 2–6 weeks. Get in touch, and we'll work out a way to meet your needs."
+      question: "Can I customize my Umrah trip?",
+      answer: "Absolutely! We understand that every traveler is unique, so we offer flexible packages that can be tailored to fit your specific needs, whether you're traveling solo, with family, or in a group."
     },
     {
-      question: "What's the cost for your software development services?",
-      answer: "Software development costs for a medium/large application may range from $50,000 to $1,000,000. The total amount mainly depends on the number and complexity of software features, the number of platforms supported (web, mobile, desktop), and the type of development (custom, low-code, or platform-based). The UI design uniqueness and complexity, the number of integrations with other software systems, as well as availability, security, and performance requirements also play an important part.You can request free project cost calculation from SoftPlatoon or find more details about software development costs in our recent guide."
+      question: "How close are the accommodations to the Haram?",
+      answer: "We know proximity to the holy sites is important, so we partner with hotels close to the Haram in both Makkah and Madinah. This makes it easy for you to attend prayers and have a convenient stay."
     },
     {
-      question: "What’s your post-launch policy?",
-      answer: "During the first 1–3 months after the software launch, our team:Answers your and users’ questions, resolves user issues (if any).Manages incidents, configuration changes, and updates.After 3 months, upon agreement, we’re ready to offer continuous maintenance and evolution of your software, as well as L1–L3 support (if required). We know how to nurture long-term partnerships and keep our clients happy in the long run: 62% of our revenue is coming from customers we serve for more than 2 years."
+      question: "What documents do I need for the Umrah visa?",
+      answer: "Typically, you’ll need a valid passport, a recent passport-sized photo, proof of required vaccinations (like meningitis), and a filled-out visa application. Don’t worry—our team will guide you through each step."
     },
     {
-      question: "What is your preferred development methodology?",
-      answer: "For most of our software engineering projects, we use Scrum with 2–3 week iterations. For small and midsize projects with clearly defined and unchanging requirements, projects requiring formal approvals (governmental projects and projects for big corporations), and projects with strict compliance requirements, we can opt for Waterfall. In software support and evolution projects, we mostly follow Kanban. Naturally, in many projects, it makes sense to use a combination of approaches or switch from one to another depending on the project stage. In our practice, the most common scenarios are ‘Waterfall -> Scrum’, ‘Scrum -> Kanban -> Scrum.’"
+      question: "What if I need help during my trip?",
+      answer: "We’ve got you covered! Our team is available 24/7 during your journey, ready to assist with any questions, needs, or unexpected issues to make sure you have a safe and fulfilling pilgrimage."
     },
   ];
 
