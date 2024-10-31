@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
@@ -18,10 +19,11 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
+    "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^6.21.1",
     "react-scroll": "^1.9.0",
     "sort-by": "^1.2.0",
-    "sweetalert2": "^11.10.2"
+    "sweetalert2": "^11.14.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

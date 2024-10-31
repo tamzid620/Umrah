@@ -129,12 +129,12 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a
+            <Link to="/contact"
                 className="lg:flex md:hidden sm: hidden mt-1 px-4 py-3 uppercase 
                   text-white bg-[#25476a] hover:bg-[#21a1eb] hover:text-white rounded-md"
               >
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
               <a className="lg:hidden md:block sm: block md:p-4 py-2 uppercase hover:text-[#539ce6]">

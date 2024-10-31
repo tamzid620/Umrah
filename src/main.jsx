@@ -6,6 +6,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Pages/Home/Home";
 import UserUmrahPackages from "./Components/Pages/UserUmrahPackages/UserUmrahPackages";
+import ContactUs from "./Components/Pages/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/umrah-packages",
         element: <UserUmrahPackages />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
       },
     ],
   },
