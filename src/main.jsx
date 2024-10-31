@@ -7,6 +7,7 @@ import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Pages/Home/Home";
 import UserUmrahPackages from "./Components/Pages/UserUmrahPackages/UserUmrahPackages";
 import ContactUs from "./Components/Pages/ContactUs/ContactUs";
+import AboutUs from "./Components/Pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />,
+      },
+      {
+        path: "/aboutUs",
+        element: <AboutUs />,
       },
     ],
   },

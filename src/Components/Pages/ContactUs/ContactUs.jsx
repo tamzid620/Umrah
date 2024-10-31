@@ -82,7 +82,7 @@ const ContactUs = () => {
       <div className="bg-white py-20">
         <div
           style={{ fontFamily: "Taviraj, serif" }}
-          className=" lg:max-w-6xl md:max-w-3xl sm:max-w-sm lg:mx-auto md:px-7 sm:px-4"
+          className=" lg:max-w-6xl md:max-w-3xl sm:max-w-sm lg:mx-auto md:px-7 sm: px-4"
         >
           <h1
             style={{ fontFamily: "Taviraj, serif" }}

@@ -1,38 +1,17 @@
 import { Link } from "react-router-dom";
 import homeLogo from "../../../assets/icons/Umrah-Logo-Blue.png";
-import { useEffect, useRef, useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import { useState } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [aboutUsDropDownOpen, setAboutUsDropDownOpen] = useState(false);
-  const navRef = useRef(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const toggleAboutUsDropDown = () => {
-    setAboutUsDropDownOpen(!aboutUsDropDownOpen);
-  };
-
-  const handleClickOutside = (e) => {
-    if (navRef.current && !navRef.current.contains(e.target)) {
-      setAboutUsDropDownOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
   return (
     <div>
       <nav
-        ref={navRef}
         className="
         font-semibold
           flex flex-wrap
@@ -101,22 +80,9 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a
-                onClick={toggleAboutUsDropDown}
-                className="md:p-4 py-2 uppercase  hover:text-[#539ce6] flex items-center relative "
-              >
-                About Us <IoIosArrowDown className="ms-2" />
-              </a>
-              {/* about us ul li ------- */}
-              <ul
-                className={`${
-                  aboutUsDropDownOpen ? "block" : "hidden"
-                } bg-gray-200 p-3 leading-10 absolute w-[200px] text-center z-50`}
-              >
-                <li className="hover:bg-[#539ce6] hover:text-white">Our Steps & guidance</li>
-                <li className="hover:bg-[#539ce6] hover:text-white">Our Team</li>
-                <li className="hover:bg-[#539ce6] hover:text-white">Photo Gallery</li>
-              </ul>
+              <Link to="/aboutUs" className="md:p-4 py-2 uppercase  hover:text-[#539ce6] flex items-center relative">
+                About Us
+              </Link>
             </li>
             <li>
               <Link to="/umrah-packages" className="md:p-4 py-2 block uppercase hover:text-[#539ce6]">
