@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import homeLogo from "../../../assets/icons/Umrah-Logo-Blue.png";
 import { useState } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -72,40 +73,54 @@ const Navbar = () => {
               gap-3"
           >
             <li>
-              <a
-                className="md:p-4 py-2 block uppercase hover:text-[#539ce6] "
-                href="/"
+              <Link to="/"
+                 className={`md:p-4 py-2 block uppercase hover:text-[#539ce6] ${
+                  location.pathname === "/" ? "text-[#539ce6]" : ""
+                }`}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <Link to="/aboutUs" className="md:p-4 py-2 uppercase  hover:text-[#539ce6] flex items-center relative">
+              <Link to="/aboutUs"
+               className={`md:p-4 py-2 uppercase hover:text-[#539ce6] flex items-center relative ${
+                  location.pathname === "/aboutUs" ? "text-[#539ce6]" : ""
+                }`}>
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/umrah-packages" className="md:p-4 py-2 block uppercase hover:text-[#539ce6]">
+              <Link to="/umrah-packages" 
+              className={`md:p-4 py-2 block uppercase hover:text-[#539ce6] ${
+                location.pathname === "/umrah-packages" ? "text-[#539ce6]" : ""
+              }`}>
                 Umrah Packages
               </Link>
             </li>
             <li>
-              <a className="md:p-4 py-2 block uppercase hover:text-[#539ce6]">
+              <Link to="/blog" 
+               className={`md:p-4 py-2 block uppercase hover:text-[#539ce6] ${
+                location.pathname === "/blog" ? "text-[#539ce6]" : ""
+              }`}>
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
             <Link to="/contact"
-                className="lg:flex md:hidden sm: hidden mt-1 px-4 py-3 uppercase 
-                  text-white bg-[#25476a] hover:bg-[#21a1eb] hover:text-white rounded-md"
+                className={`lg:flex md:hidden sm: hidden mt-1 px-4 py-3 uppercase text-white bg-[#25476a] hover:bg-[#21a1eb] hover:text-white rounded-md ${
+                  location.pathname === "/contact" ? "text-[#539ce6]" : ""
+                }`}
               >
                 Contact
               </Link>
             </li>
             <li>
-              <a className="lg:hidden md:block sm: block md:p-4 py-2 uppercase hover:text-[#539ce6]">
+              <Link to=""
+               className={`lg:hidden md:flex sm: flex md:p-4 py-2 uppercase hover:text-[#539ce6] ${
+                location.pathname === "/contact" ? "text-[#539ce6]" : ""
+              }`}>
               Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -8,6 +8,7 @@ import Home from "./Components/Pages/Home/Home";
 import UserUmrahPackages from "./Components/Pages/UserUmrahPackages/UserUmrahPackages";
 import ContactUs from "./Components/Pages/ContactUs/ContactUs";
 import AboutUs from "./Components/Pages/AboutUs/AboutUs";
+import Blog from "./Components/Pages/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -21,16 +22,20 @@ const router = createBrowserRouter([
       },
       // user section --------------------
       {
+        path: "/aboutUs",
+        element: <AboutUs />,
+      },
+      {
         path: "/umrah-packages",
         element: <UserUmrahPackages />,
       },
       {
-        path: "/contact",
-        element: <ContactUs />,
+        path: "/blog",
+        element: <Blog />,
       },
       {
-        path: "/aboutUs",
-        element: <AboutUs />,
+        path: "/contact",
+        element: <ContactUs />,
       },
     ],
   },
