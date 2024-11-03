@@ -81,7 +81,7 @@ const HomeUmrahPackages = () => {
                text-center leading-7 rounded-md h-[400px]"
               >
                 <img
-                  className=" w-full h-[200px] rounded-t-md"
+                  className=" w-full h-[200px] rounded-t-md "
                   src={img}
                   alt=""
                 />

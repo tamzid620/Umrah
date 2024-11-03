@@ -5,11 +5,11 @@ import { useEffect, useRef, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import emailjs from "@emailjs/browser";
-import SectionLoading from "../../Loading/SectionLoading/SectionLoading";
 import Swal from "sweetalert2";
 import icon1 from "../../../assets/icons/location.png";
 import icon2 from "../../../assets/icons/mail.png";
 import icon3 from "../../../assets/icons/phone.png";
+import SectionLoading from "../../Loading/SectionLoading/SectionLoading";
 
 const data = [
   {
@@ -30,6 +30,7 @@ const data = [
 ];
 
 const ContactUs = () => {
+
   const [isLoading, setLoading] = useState(false);
   const [contact, setContact] = useState("");
   const form = useRef();

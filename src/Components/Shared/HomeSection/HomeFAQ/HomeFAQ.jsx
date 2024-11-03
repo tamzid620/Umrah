@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const questions = [
     {
@@ -25,7 +27,7 @@ const questions = [
   ];
 
 const HomeFAQ = () => {
-
+  Aos.init();
     const [openIndex, setOpenIndex] = useState(null) ;
     const toggleAccordion = (index) => {
       setOpenIndex(openIndex ===index ? null : index) ;
@@ -33,21 +35,20 @@ const HomeFAQ = () => {
 
     return (
         <div className=" py-[60px] bg-white">
-        <div className=" lg:max-w-5xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-5 sm: mx-4">
+        <div  data-aos="fade-down" className=" lg:max-w-5xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-5 sm: mx-4">
         <div
           style={{ fontFamily: "Open Sans, sans-serif" }}
           className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
         >
           <h1
-            data-aos="fade-down"
-            style={{ fontFamily: "Sumana,-serif" }}
-            className="font-bold text-5xl mb-5"
+           
+            style={{ fontFamily: "Taviraj, serif" }}
+            className="font-bold text-3xl mb-3"
           >
             Frequently Asked Questions
           </h1>
   {/* accordion div  */}
           <div
-            data-aos="fade-down"
             style={{ fontFamily: "Ubuntu,serif" }}
             className="mt-10"
           >    {questions.map((item, index) => (

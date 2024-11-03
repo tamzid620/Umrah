@@ -102,7 +102,7 @@ const Navbar = () => {
                className={`md:p-4 py-2 block uppercase hover:text-[#539ce6] ${
                 location.pathname === "/blog" ? "text-[#539ce6]" : ""
               }`}>
-                Blog
+                Blogs
               </Link>
             </li>
             <li>

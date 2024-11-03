@@ -9,6 +9,7 @@ import UserUmrahPackages from "./Components/Pages/UserUmrahPackages/UserUmrahPac
 import ContactUs from "./Components/Pages/ContactUs/ContactUs";
 import AboutUs from "./Components/Pages/AboutUs/AboutUs";
 import Blog from "./Components/Pages/Blog/Blog";
+import UnderConstruction from "./Components/Pages/UnderConstruction/UnderConstruction";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />,
+      },
+      {
+        path: "/under-construction",
+        element: <UnderConstruction />,
       },
     ],
   },
