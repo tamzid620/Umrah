@@ -100,7 +100,7 @@ const HomeUmrahPackages = () => {
                   </p>
                 </div>
                 <button className="absolute bottom-3 left-28 bg-gray-300 text-black font-semibold rounded-md px-3 py-1 hover:bg-[#21a1eb] hover:text-white">
-                  Know More
+                <Link to="/under-construction">Know More</Link> 
                 </button>
               </div>
             ))}
